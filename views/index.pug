@@ -6,6 +6,7 @@ block content
   p Spandana Pandi
   button(type="button", class="btn btn-secondary",onclick='goFaster()') Press Me 
   div(id="faster") Increase the speed
+  a(href='http://localhost:3000/transportation') transportation Link
   script.
     var mph = 20;
     var change = 1;
@@ -15,3 +16,4 @@ block content
       var div = document.getElementById('faster');
       div.textContent = `MPH ${mph} with change ${change}` ;
     }
+    a(href="/transportation") View transportation
